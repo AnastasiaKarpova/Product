@@ -1,12 +1,16 @@
-
 public class Main{
-    public static void main(String[] args){
-        Product product = new Product("Glasses", 3);
-        product.setPrice(2300);
-        //product.setPrice(-2300);
-        System.out.println("Name product: "+ product.getName());
-        System.out.println("Price product: "+ product.getPrice());
-        System.out.println("Quantity product: "+ product.getQuantity());
-        System.out.println(product.totalCost());
+    public static void main(String[] args) {
+        try{
+            Product prod = new Product("Icecream", 300);
+            System.out.println(prod);
+            Product prod2 = new Product("", 10);
+            //System.out.println(prod2);
+            Product prod1 = new Product("Cream", 0);
+            //System.out.println(prod1);
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+
     }
 }
